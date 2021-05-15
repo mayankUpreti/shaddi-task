@@ -1,0 +1,48 @@
+
+
+//styling scroll bar
+:root {
+    --scroll-bg: #00000020;
+  }
+* {
+    scrollbar-color: var(--scroll-bg) #ffffff00;
+    scrollbar-width: thin;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--scroll-bg);
+  }
+  
+
+.content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main-body{
+    overflow: auto;
+    height: 800px;
+    padding:20px
+}
+.p-30{
+    padding:30px;
+}
+.item-container{
+    max-width: 300px;
+    cursor: pointer;
+    border-radius: 5px;
+    &:hover{
+        box-shadow: 0 3px 6px 0 rgba(45, 109, 205, 0.43);
+    }
+}
+.align-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-shadow{
+    box-shadow: 0 3px 6px 0 rgba(45, 109, 205, 0.43);
+}
